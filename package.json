@@ -1,0 +1,27 @@
+{
+  "name": "human-matching",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsgo --noEmit",
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "build": "tsgo --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "solid-js": "1.9.12"
+  },
+  "devDependencies": {
+    "@types/node": "24.12.2",
+    "@typescript/native-preview": "7.0.0-dev.20260422.1",
+    "oxfmt": "0.46.0",
+    "oxlint": "1.61.0",
+    "typescript": "6.0.3",
+    "vite": "8.0.10",
+    "vite-plugin-solid": "2.11.12"
+  }
+}
