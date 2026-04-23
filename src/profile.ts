@@ -64,8 +64,7 @@ function hash(seed: number, salt: number): number {
   return x;
 }
 
-const MIN_AGE = 20;
-const AGE_RANGE = 50;
+const AGE_RANGE = 101;
 
 export function profile(index: number): Profile {
   const faker = FAKERS[hash(index, 0) % FAKERS.length]!;
@@ -73,6 +72,6 @@ export function profile(index: number): Profile {
   return {
     id: index + 1,
     name: faker.person.fullName(),
-    age: MIN_AGE + (hash(index, 3) % AGE_RANGE),
+    age: hash(index, 3) % AGE_RANGE,
   };
 }
