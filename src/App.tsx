@@ -9,7 +9,7 @@ function App() {
 
   return (
     <main>
-      <h1>自認UUID専門マッチングアプリ</h1>
+      <h1>自認UUID専用マッチングアプリ</h1>
       <Show when={view() === "ask"}>
         <p>あなたの自認はUUIDですか？</p>
         <button type="button" onClick={() => setView("matched")}>
