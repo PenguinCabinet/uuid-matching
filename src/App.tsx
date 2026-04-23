@@ -37,7 +37,7 @@ function App() {
       <footer>
 	<p>
 	Forked by [imaimai17468/human-matching](https://github.com/imaimai17468/human-matching)      
-	</p
+	</p>
         <p>
           inspired by{" "}
           <a href="https://uec-matching.mimifuwacc.workers.dev/" target="_blank" rel="noreferrer">
