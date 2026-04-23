@@ -36,7 +36,7 @@ function App() {
      <hr />
       <footer>
 	<p>
-	Forked by [imaimai17468/human-matching](https://github.com/imaimai17468/human-matching)      
+	Forked by <a href="https://github.com/imaimai17468/human-matching">imaimai17468/human-matching</a>
 	</p>
         <p>
           inspired by{" "}
