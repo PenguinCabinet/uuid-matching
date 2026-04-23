@@ -9,9 +9,9 @@ function App() {
 
   return (
     <main>
-      <h1>人類専用マッチングアプリ</h1>
+      <h1>自認UUID専門マッチングアプリ</h1>
       <Show when={view() === "ask"}>
-        <p>あなたは人類ですか？</p>
+        <p>あなたの自認はUUIDですか？</p>
         <button type="button" onClick={() => setView("matched")}>
           はい
         </button>
@@ -19,7 +19,7 @@ function App() {
           いいえ
         </button>
       </Show>
-      <Show when={view() === "matched"}>
+     <Show when={view() === "matched"}>
         <Suspense fallback={<p>マッチング中…</p>}>
           <MatchedView />
         </Suspense>
@@ -28,12 +28,12 @@ function App() {
         </button>
       </Show>
       <Show when={view() === "rejected"}>
-        <p>人類以外は利用することができません。</p>
+        <p>自認UUIDの方以外は利用することができません。</p>
         <button type="button" onClick={() => setView("ask")}>
           最初に戻る
         </button>
       </Show>
-      <hr />
+     <hr />
       <footer>
         <p>
           inspired by{" "}

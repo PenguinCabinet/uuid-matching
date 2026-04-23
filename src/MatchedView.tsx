@@ -86,7 +86,7 @@ function MatchedView() {
                     "line-height": "24px",
                   }}
                 >
-                  #{p.id.toLocaleString("ja-JP")} {p.name}（{p.age}歳）
+                  {p.name}
                 </div>
               );
             }}

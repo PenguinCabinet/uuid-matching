@@ -1,3 +1,4 @@
+import { v5 as uuidv5 } from "uuid";
 import {
   ar,
   base,
@@ -51,9 +52,7 @@ const LOCALES = [
 const FAKERS = LOCALES.map((locale) => new Faker({ locale: [locale, en, base] }));
 
 export type Profile = {
-  id: number;
   name: string;
-  age: number;
 };
 
 function hash(seed: number, salt: number): number {
@@ -67,11 +66,8 @@ function hash(seed: number, salt: number): number {
 const AGE_RANGE = 101;
 
 export function profile(index: number): Profile {
-  const faker = FAKERS[hash(index, 0) % FAKERS.length]!;
-  faker.seed(index + 1);
+  const NAMESPACE = "610ff7b6-53de-49f3-87f4-2b71c1d6c830";
   return {
-    id: index + 1,
-    name: faker.person.fullName(),
-    age: hash(index, 3) % AGE_RANGE,
+    name: uuidv5(String(index), NAMESPACE),
   };
 }

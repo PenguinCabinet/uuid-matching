@@ -19,7 +19,7 @@ function cachedPrepare(text: string, font: string): PreparedText {
 
 export function rowHeight(index: number, width: number): number {
   const p = profile(index);
-  const header = `#${p.id.toLocaleString("ja-JP")}  ${p.name}（${p.age}歳）`;
+  const header = `${p.name}`;
   return (
     layout(cachedPrepare(header, HEADER_FONT), width, HEADER_LINE_HEIGHT).height + ROW_PADDING * 2
   );
