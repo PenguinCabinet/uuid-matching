@@ -53,7 +53,7 @@ function App() {
             GitHub
           </a>
         </p>
-        <p>© 2026 imaimai17468</p>
+        <p>© 2026 imaimai17468,PenguinCabinet</p>
       </footer>
     </main>
   );
