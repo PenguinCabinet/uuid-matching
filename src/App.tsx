@@ -35,6 +35,9 @@ function App() {
       </Show>
      <hr />
       <footer>
+	<p>
+	Forked by [imaimai17468/human-matching](https://github.com/imaimai17468/human-matching)      
+	</p
         <p>
           inspired by{" "}
           <a href="https://uec-matching.mimifuwacc.workers.dev/" target="_blank" rel="noreferrer">
@@ -43,7 +46,7 @@ function App() {
         </p>
         <p>
           <a
-            href="https://github.com/imaimai17468/human-matching"
+            href="https://github.com/PenguinCabinet/uuid-matching"
             target="_blank"
             rel="noreferrer"
           >
